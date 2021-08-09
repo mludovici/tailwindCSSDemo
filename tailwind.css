@@ -1,3 +1,19 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer base {
+	h1 {
+		@apply text-5xl mb-6 font-headline text-mainColor;
+	}
+	h2 {
+		@apply mb-3 text-3xl font-headline text-mainColor;
+	}
+	h3 {
+		@apply mb-2 text-2xl font-headline text-mainColor;
+	}
+	@font-face {
+		font-family: 'StyleScript';
+		src: url(/dist/fonts/StyleScript-Regular.ttf) format('truetype');
+	}
+}

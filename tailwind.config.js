@@ -5,7 +5,15 @@ module.exports = {
 		debugScreens: {
 			position: ['top', 'right'],
 		},
-		extend: {},
+		extend: {
+			fontFamily: {
+				headline: ['StyleScript'],
+			},
+
+			colors: {
+				mainColor: '#212f49',
+			},
+		},
 	},
 	variants: {
 		extend: {},
