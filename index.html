@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html :class="dark ? 'dark' : ''" lang="en" x-data="{dark: false}">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="dist/css/styles.css" />
+		<script
+			defer
+			src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+		></script>
+		<title>Mini Tailwind CSS Project</title>
+	</head>
+	<body class="debug-screens">
+		<div
+			class="
+				container
+				mx-auto
+				bg-gray-100
+				min-h-screen
+				px-6
+				py-8
+				dark:bg-gray-900
+			"
+		>
+			<! - page header / headings ->
+			<section id="header">
+				<button
+					@click="dark = !dark"
+					class="bg-gray-300 rounded-xl p-3"
+					:class="!dark ? 'bg-gray-400 ' : ''"
+					x-text="dark ? 'Switch to normal mode': 'Switch to dark mode'"
+				>
+					Toggle Dark Mode
+				</button>
+				<div class="text-center">
+					<h1 class="font-headline leading-snug dark:text-yellow-300">
+						Tom Gonzales home training <br />
+						I'll get you in shape!
+					</h1>
+					<h2>
+						Muscle building • Functional training • Nutritional
+						advice
+					</h2>
+				</div>
+			</section>
+
+			<! - Services ->
+			<section
+				id="image_services"
+				class="
+					mt-8
+					grid grid-cols-2
+					sm\:w-9/12
+					md:mx-auto md:gap-10
+					gap-5
+				"
+			>
+				<! - picture ->
+				<div id="image" class="ml-auto">
+					<img
+						src="dist/img/tom.jpg"
+						alt="Tom Gonzales Online Training"
+					/>
+				</div>
+
+				<div id="services">
+					<h3>I offer you:</h3>
+					<ul class="list-disc list-outside ml-4">
+						<li class="mb-4">
+							Lessons via Skype and you can record all sessions
+							and watch them again later.
+						</li>
+						<li class="">Holistic full body training</li>
+						<li class="">Training without equipment</li>
+						<li class="">Pain reduction</li>
+						<li class="">Tailored nutrition plans</li>
+					</ul>
+					<section id="quali_right" class="md:block hidden">
+						<h3 class="mt-10">My qualifications:</h3>
+						<ul class="list-disc ml-4 mb-4">
+							<li class="">Certified nutritionist</li>
+							<li class="">Certified fitness trainer</li>
+							<li class="">
+								5 years of experience in 1: 1 training
+							</li>
+						</ul>
+					</section>
+				</div>
+			</section>
+
+			<!--only for <=sm-->
+			<section id="quali_bottom" class="md:hidden">
+				<h3 class="mt-5 md:mt-10">My qualifications:</h3>
+				<ul class="list-disc list-outside ml-4 mb-4">
+					<li class="">Certified nutritionist</li>
+					<li class="">Certified fitness trainer</li>
+					<li class="">5 years of experience in 1: 1 training</li>
+				</ul>
+			</section>
+
+			<! - Prices and payment ->
+			<section class="mt-8" id="price_payment">
+				<div class="md:w-8/12 mx-auto">
+					<h2>Prices and payment</h2>
+					<p>
+						My most important goal is that you get ahead with your
+						goals.
+					</p>
+					<p class="text-justify">
+						In a free opening session we will discuss what you want
+						to achieve and how much you can or want to spend. Then
+						we are guaranteed to find a solution that suits you.
+					</p>
+				</div>
+			</section>
+
+			<! - Contact ->
+			<section class="mt-8" id="contact">
+				<div class="flex justify-around lg:mx-auto lg:w-8/12">
+					<div id="email">
+						<p>Your message:</p>
+						<a
+							href="#"
+							class="
+								bg-gray-300
+								px-4
+								py-2
+								shadow-sm
+								hover:bg-gray-400 hover:shadow-none
+								transition
+								flex
+								items-center
+								w-max
+								focus:ring-2 focus:ring-green-400
+								rounded
+							"
+						>
+							<svg
+								class="h-4 mr-1"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="feather feather-at-sign"
+							>
+								<circle cx="12" cy="12" r="4"></circle>
+								<path
+									d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"
+								></path></svg
+							><span>Send an Email</span></a
+						>
+					</div>
+					<div id="whatsApp_telefon">
+						<p>WhatsApp:</p>
+						<span>1 222 555 44 33</span>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
