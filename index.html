@@ -13,28 +13,20 @@
 	</head>
 	<body class="debug-screens">
 		<div
-			class="
-				container
-				mx-auto
-				bg-gray-100
-				min-h-screen
-				px-6
-				py-8
-				dark:bg-gray-900
-			"
+			class="container min-h-screen px-6 py-8 mx-auto bg-gray-100  dark:bg-gray-900"
 		>
 			<! - page header / headings ->
 			<section id="header">
 				<button
 					@click="dark = !dark"
-					class="bg-gray-300 rounded-xl p-3"
+					class="p-3 bg-gray-300 rounded-xl"
 					:class="!dark ? 'bg-gray-400 ' : ''"
 					x-text="dark ? 'Switch to normal mode': 'Switch to dark mode'"
 				>
 					Toggle Dark Mode
 				</button>
 				<div class="text-center">
-					<h1 class="font-headline leading-snug dark:text-yellow-300">
+					<h1 class="leading-snug font-headline dark:text-yellow-300">
 						Tom Gonzales home training <br />
 						I'll get you in shape!
 					</h1>
@@ -66,7 +58,7 @@
 
 				<div id="services">
 					<h3>I offer you:</h3>
-					<ul class="list-disc list-outside ml-4">
+					<ul class="ml-4 list-disc list-outside">
 						<li class="mb-4">
 							Lessons via Skype and you can record all sessions
 							and watch them again later.
@@ -76,9 +68,9 @@
 						<li class="">Pain reduction</li>
 						<li class="">Tailored nutrition plans</li>
 					</ul>
-					<section id="quali_right" class="md:block hidden">
+					<section id="quali_right" class="hidden md:block">
 						<h3 class="mt-10">My qualifications:</h3>
-						<ul class="list-disc ml-4 mb-4">
+						<ul class="mb-4 ml-4 list-disc">
 							<li class="">Certified nutritionist</li>
 							<li class="">Certified fitness trainer</li>
 							<li class="">
@@ -92,7 +84,7 @@
 			<!--only for <=sm-->
 			<section id="quali_bottom" class="md:hidden">
 				<h3 class="mt-5 md:mt-10">My qualifications:</h3>
-				<ul class="list-disc list-outside ml-4 mb-4">
+				<ul class="mb-4 ml-4 list-disc list-outside">
 					<li class="">Certified nutritionist</li>
 					<li class="">Certified fitness trainer</li>
 					<li class="">5 years of experience in 1: 1 training</li>
@@ -101,7 +93,7 @@
 
 			<! - Prices and payment ->
 			<section class="mt-8" id="price_payment">
-				<div class="md:w-8/12 mx-auto">
+				<div class="mx-auto md:w-8/12">
 					<h2>Prices and payment</h2>
 					<p>
 						My most important goal is that you get ahead with your
@@ -116,25 +108,13 @@
 			</section>
 
 			<! - Contact ->
-			<section class="mt-8" id="contact">
+			<section class="mx-auto mt-8" id="contact">
 				<div class="flex justify-around lg:mx-auto lg:w-8/12">
 					<div id="email">
 						<p>Your message:</p>
 						<a
 							href="#"
-							class="
-								bg-gray-300
-								px-4
-								py-2
-								shadow-sm
-								hover:bg-gray-400 hover:shadow-none
-								transition
-								flex
-								items-center
-								w-max
-								focus:ring-2 focus:ring-green-400
-								rounded
-							"
+							class="flex items-center px-4 py-2 transition bg-gray-300 rounded shadow-sm  hover:bg-gray-400 hover:shadow-none w-max focus:ring-2 focus:ring-green-400"
 						>
 							<svg
 								class="h-4 mr-1"

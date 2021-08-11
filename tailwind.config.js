@@ -1,8 +1,9 @@
 module.exports = {
 	purge: {
-		content: ['./src/**/*.{html,md}'],
+		enabled: true,
+		content: ['./**/*.{html,md}'],
 	},
-	darkMode: false, // or 'media' or 'class'
+	darkMode: 'class', // or 'media' or 'class'
 	theme: {
 		debugScreens: {
 			position: ['top', 'right'],
@@ -14,6 +15,9 @@ module.exports = {
 
 			colors: {
 				mainColor: '#212f49',
+			},
+			spacing: {
+				20: '5.25rem',
 			},
 		},
 	},

@@ -5,9 +5,9 @@ module.exports = {
 	plugins: [
 		require('tailwindcss'),
 		require('autoprefixer'),
-		cssnano({
-			preset: 'default',
-		}),
+		// cssnano({
+		// 	preset: 'default',
+		// }),
 		purgecss({
 			content: ['./**/*.html', './src/**/*.vue', './src/**/*.jsx'],
 			defaultExtractor: (content) =>
